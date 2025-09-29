@@ -65,7 +65,9 @@ export default function Game() {
                     for (let i = 0; i < 5; i++) {
                         if (row[i].status !== "correct") {
                             won = false;
-                            break;
+                            if(row[i].status == "") {
+                                row[i].status = "incorrect";
+                            }
                         }
                     }
 

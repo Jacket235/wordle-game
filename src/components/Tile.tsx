@@ -7,7 +7,7 @@ export default function Tile({ value, status }: props) {
     const colors: Record<string, string> = {
         correct: "border-green-500 bg-green-500",
         present: "border-yellow-400 bg-yellow-400",
-        incorrect: "border-gray-700 bg-gray-700"
+        incorrect: "bg-gray-700"
     }
 
     return (
@@ -15,4 +15,4 @@ export default function Tile({ value, status }: props) {
             <span className="flex items-center justify-center text-3xl uppercase">{value}</span>
         </div>
     );
-}
+}   
